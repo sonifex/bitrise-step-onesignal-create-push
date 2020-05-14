@@ -9,7 +9,7 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |
-    OneSignal Create Push
+    Send OneSignal push message
 summary: |
     Create a notification with onesignal. You can send notification with existing OneSignal app
 description: |
@@ -17,6 +17,10 @@ description: |
 website: https://github.com/sonifex/bitrise-step-onesignal-create-push
 source_code_url: https://github.com/sonifex/bitrise-step-onesignal-create-push
 support_url: https://github.com/sonifex/bitrise-step-onesignal-create-push/issues
+published_at: 2020-05-09T13:53:15+00:00
+source:
+  git: https://github.com/sonifex/bitrise-step-onesignal-create-push.git
+  commit: 2c05994e6a465eda27cb61527d1c895e9880b4a5
 host_os_tags:
     - osx-10.10
     - ubuntu-16.04
@@ -39,13 +43,6 @@ is_always_run: true
 is_skippable: false
 run_if: ""
 
-deps:
-    brew:
-        - name: git
-        - name: wget
-    apt_get:
-        - name: git
-        - name: wget
 
 toolkit:
     bash:
